@@ -1,0 +1,28 @@
+#include <iostream>
+
+void main
+{
+cout << "Yooooooooooooo";
+}
+
+int main(int argc, char const *argv[]) {
+  /* code */
+  return 0;
+}
+std::ifstream afile("filename.txt", std::ios::in);
+if (afile.is_open()) {
+  std::string line;
+  while (std::getline(afile, line)) {
+    std::cout << line << '\n';
+  }
+  afile.close();
+}
+else {
+  std::cerr << "Unable to open file\n";
+}
+
+std::ofstream afile("filename.txt", std::ios::out);
+if (afile.is_open()) {
+  afile << "This is a line.\n";
+  afile.close();
+}∏π∏
